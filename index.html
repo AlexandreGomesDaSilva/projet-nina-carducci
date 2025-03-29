@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <!-- OG pour Facebook -->
+    <meta property="og:title" content="Nina Carducci - Photographe" />
+    <meta
+      property="og:description"
+      content="Nina Carducci, photographe professionelle, vous propose ses services pour vos événements personnels comme professionnels."
+    />
+    <meta property="og:image" content="./assets/images/nina.webp" />
+    <meta property="og:url" content="https://nina-carducci.github.io/" />
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@nina_carducci" />
+    <meta name="twitter:title" content="Nina Carducci - Photographe" />
+    <meta
+      name="twitter:description"
+      content="Nina Carducci, photographe professionelle, vous propose ses services pour vos événements personnels comme professionnels."
+    />
+    <meta name="twitter:image" content="./assets/images/nina.webp" />
     <meta charset="UTF-8" />
     <meta
       name="description"
@@ -12,8 +29,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
     />
     <title>Nina Carducci - Photographe</title>
     <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
@@ -40,6 +57,7 @@
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
+              aria-label="Instagram de Nina Carducci"
               ><img src="assets/images/instagram.webp" alt="Logo Instagram"
             /></a>
           </li>
@@ -278,11 +296,11 @@
           <p>
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>
-          <form action="" method="post">
+          <form action="#" method="post">
             <label for="nom">Nom</label>
-            <input type="text" name="nom" id="nom" />
+            <input type="text" id="nom" name="nom" autocomplete="nom" />
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" id="email" name="email" autocomplete="email" />
             <label for="message">Message</label>
             <textarea
               name="message"
@@ -292,6 +310,41 @@
             ></textarea>
             <input type="submit" value="Envoyer" />
           </form>
+        </div>
+        <!-- Micro-données pour améliorer le référencement local -->
+        <div
+          class="contact-info"
+          itemscope
+          itemtype="http://schema.org/LocalBusiness"
+        >
+          <meta itemprop="name" content="Nina Carducci" />
+          <div
+            itemprop="address"
+            itemscope
+            itemtype="http://schema.org/PostalAddress"
+          >
+            <meta
+              itemprop="streetAddress"
+              content="68 avenue Alsace-Lorraine"
+            />
+            <meta itemprop="addressLocality" content="Bordeaux" />
+            <meta itemprop="postalCode" content="33200" />
+            <meta itemprop="addressCountry" content="FR" />
+          </div>
+          <meta itemprop="telephone" content="05 56 67 78 89" />
+          <div
+            itemprop="openingHoursSpecification"
+            itemscope
+            itemtype="http://schema.org/OpeningHoursSpecification"
+          >
+            <meta itemprop="dayOfWeek" content="Monday" />
+            <meta itemprop="dayOfWeek" content="Tuesday" />
+            <meta itemprop="dayOfWeek" content="Wednesday" />
+            <meta itemprop="dayOfWeek" content="Thursday" />
+            <meta itemprop="dayOfWeek" content="Friday" />
+            <meta itemprop="opens" content="10:00" />
+            <meta itemprop="closes" content="19:00" />
+          </div>
         </div>
         <div class="picture right">
           <img
